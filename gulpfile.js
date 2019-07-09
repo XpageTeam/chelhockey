@@ -158,7 +158,7 @@ gulp.task('build', gulp.series(gulp.parallel(pre_build, 'removedist', "imagemin"
 
 gulp.task("deploy:xpager", () => 
 	gulp.src("dist/**", {buffer: false})
-			.pipe(xpager_conn.dest(xpager_path))
+			.pipe(xpager_conn.dest(connectionSettings.xpager.dirName))
 );
 
 gulp.task('deploy',gulp.series("build", "deploy:xpager"));
@@ -173,7 +173,7 @@ gulp.task("deploy-zip", () =>
 			"!*.zip"
 			])
 		.pipe($.zip("app.zip"))
-		.pipe(xpager_conn.dest(xpager_path))
+		.pipe(xpager_conn.dest(connectionSettings.xpager.dirName))
 );
 
 gulp.task("min:css", () => 

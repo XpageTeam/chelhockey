@@ -1,0 +1,56 @@
+.player
+	max-width: 294px
+	width: 100%
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15)
+
+	&-top
+		position: relative
+		display: flex
+		justify-content: space-between
+		background: $main-color
+		color: #fff
+		padding: 20px
+		
+		&:before
+			content: ''
+			position: absolute
+			left: -7px
+			top: 14px
+			+size(16px)
+			background: $main-color
+			display: block
+			transform: rotate(45deg)
+
+
+		img
+			display: block
+
+	&-name
+		font-size: rem(16)
+		font-weight: bold
+
+	&-position
+		color: #A1C9E8
+		margin-top: 10px
+
+	&-cont
+		padding: 20px
+
+		&__bot
+			a 
+				&:hover
+					text-decoration: underline
+
+	&-row
+		margin-bottom: 15px
+
+	&-label
+		font-size: rem(13)
+		color: #B0B2B4
+		margin-bottom: 5px
+
+	&-data
+		font-size: rem(13)
+		color: #212121
+
+
