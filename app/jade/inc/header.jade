@@ -1,0 +1,60 @@
+header.head
+	.search-cont
+		.wrapper
+			form(action="")
+				.search__input-cont
+					input( id="title-search-input" type="text" name="q" value="" placeholder="Поиск" autofocus).search__input
+					input(type="submit" name="s").search__submit
+	.head-top
+		.wrapper
+			.head-top__cont
+				a(href="/").main-logo
+					img(src="img/logo.png", alt="")
+				.head-top__info
+					.head-top__phone
+						a(href="tel:8 (351) 734-55-63") 8 (351) 734-55-63
+					.head-top__city
+						.city 
+							//- .body_overflow
+							span Челябинск
+							include popup2.jade
+							include popup1.jade
+				.head-top__location
+					address.address Университетская набережная, 34
+					div
+						.mail
+							a(href="mailto:detiindigo@mail.ru") detiindigo@mail.ru
+						.time 8:00 - 20:00
+				.questions
+					a(href="#").btn.fancybox Задать вопрос врачу
+				.search-btn
+				.burger
+					span
+				.mobile-menu
+				.burger-shadow
+	.head-bot
+		.wrapper
+
+			.main-nav
+				.main-nav__list
+					.main-nav__item.active
+						a(href="#").main-nav__link О центре
+						ul.sub-menu
+							li.sub-menu__item
+								a(href="#").sub-menu__link Заболевания
+							li.sub-menu__item
+								a(href="#").sub-menu__link О нас
+							li.sub-menu__item
+								a(href="#").sub-menu__link Лицензии и патенты
+							li.sub-menu__item
+								a(href="#").sub-menu__link Вакансии
+							li.sub-menu__item
+								a(href="#").sub-menu__link Контакты
+
+					each title in ['Специалисты', 'Наши услуги', 'Цены', 'Акции', 'Отзывы', 'Полезная информация', 'Видео']
+						.main-nav__item
+							a(href="#").main-nav__link=title
+
+
+
+		

@@ -1,0 +1,1762 @@
+$output-bourbon-deprecation-warnings: false;
+@import "bourbon"
+@import "vars"
+@import "base"
+@import "functions"
+
+body
+	background-image: url('../new-img/new/foto_arka.jpg') !important
+	background-repeat: no-repeat !important
+	background-attachment: fixed !important
+	background-color: #1f253d !important
+	background-position-x: center !important
+	background-position-y: top !important
+a 
+	color: #1e7bc3
+
+* 
+	outline: none
+
+img 
+	max-width: 100%
+.link-bg 
+	img
+		max-width: none 
+.up
+	display: flex
+	justify-content: space-between
+	align-items: center
+body.bg 
+	.all-float
+		margin: 0
+
+
+.btn--red
+	background: #e12d03 !important
+	margin-bottom: 27px
+
+.over-bg
+	margin-top: 210px
+
+nav
+	display: flex
+	float: none
+	padding: 0 30px
+	width: 100%
+	background: #1e7bc3
+	box-sizing: border-box
+
+	ul 
+		display: flex 
+		justify-content: space-between
+		width: 100%
+		position: relative
+		left: 0
+
+	li 
+		position: relative
+		text-decoration: none !important
+		height: auto
+		margin: 0
+
+		&:before 
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 0
+			display: block
+			width: 100%
+			height: 3px
+			background: #000
+			transform: translateY(3px)
+			transition: transform .3s ease, opacity .3s ease
+			opacity: 0
+
+		&:hover
+
+			&:before 
+				transform: translateY(0)
+				opacity: 1
+
+
+	a
+		display: block
+		padding: 20px 10px
+		white-space: nowrap
+
+
+	> li
+		position: relative
+		
+		// overflow: hidden 
+		a
+		text-transform: none !important
+		font-size: rem(15)
+		font-weight: 400
+
+		&:hover 
+			ul
+				pointer-events: all
+				opacity: 1
+
+
+#horizontal-multilevel-menu
+	position: relative
+	color: #000
+	
+	ul 
+		position: absolute
+		top: 100%
+		left: 0
+		display: flex 
+		flex-direction: column
+		opacity: 0
+		pointer-events: none
+		background: #fff
+		z-index: 999
+		color: #000
+		width: auto
+		box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2)
+		padding: 10px 0
+
+		&:before 
+			display: none
+
+		li
+			transition: background .3s ease
+			&:before
+				display: none
+
+			&:hover 
+				background: rgba(30, 123, 195, 0.4)
+				  
+
+		a 
+			color: #000
+			padding: 10px 25px
+
+
+
+	> li
+		&:hover 
+
+			ul
+				opacity: 1
+				pointer-events: all
+
+
+.e-switcher_btn b
+	border: 1px solid #1e7bc3 !important
+
+header 
+	.up 
+		.search
+			float: none 
+			height: auto
+			
+			margin: 0
+			position: relative
+			border: 0
+			margin-right: 50px
+
+			form 
+				display: flex
+
+			input[type=text]
+				height: 35px
+				border: 0
+				width: 100%
+				padding: 0 30px 0 10px
+				border: 1px solid #eeebfb
+				width: 220px
+				font-size: rem(14)
+				color: #d1d3d8
+				background: url(../img/new/ico-search.png) no-repeat right 10px center
+
+			input[type=submit]
+				position: absolute
+				right: 0
+				top: 0
+				bottom: 0
+				width: 35px
+				height: 37px
+				background: none
+
+		.login
+			background: url('../img/new/ico-user.png') no-repeat left 0 center !important 
+			font-weight: normal
+			
+		.but-login
+			text-decoration: underline
+			font-size: rem(14)
+			border-bottom: 0 !important
+			padding-left: 13px
+			font-weight: normal
+
+		.reg
+			margin-left: rem(30) 
+			a
+				color: $main-color !important
+				font-size: rem(14)
+				border-bottom: 0 !important
+				text-decoration: underline
+
+	.head
+		display: flex
+		width: 100% !important
+		height: auto !important
+		padding: 30px 25px 10px 35px !important
+		box-sizing: border-box !important
+		align-items: center
+
+
+		.logo
+			margin: 0
+			padding: 0
+			float: none
+
+	#coundown
+		margin-left: auto
+		width: 335px
+		width: auto
+		margin-top: 0 !important
+
+		br 
+			display: none
+			
+
+		b 
+			display: block
+			text-align: left
+			margin-left: 6px
+
+	.flip-clock
+		&-label
+			color: #d1d3d8 !important
+
+		&-wrapper 
+			ul
+				background: none !important
+
+				li a div div.inn
+					background-color: $main-color !important
+					text-shadow: none
+
+			.flip
+				box-shadow: none
+		&-dot
+			background: $main-color !important
+			box-shadow: none
+
+
+		&-divider
+
+			&:first-child
+				// width: 32px !important
+				// left: 10%
+				// transform: translateX(-50%)
+
+				.flip-clock-label
+			
+
+
+.soc
+	display: flex
+	&__el
+		display: block
+		+size(30px)
+		border-radius: 50%
+		background-color: #d1d3d8
+		background-repeat: no-repeat
+		background-position: center
+
+		&:not(:first-child)
+			margin-left: 15px
+
+.write
+	padding-left: 20px
+	background: url('../img/new/ico-pen.png') no-repeat left 0 center
+	margin: 0 auto
+
+	&__link 
+		text-decoration: underline
+		font-size: rem(14)
+		color: #1e7bc3
+		padding-left: 10px
+
+
+
+.slider-game
+	display: flex 
+	flex-direction: column
+	float: none
+	width: 100% !important
+	margin: 0 !important
+	box-sizing: border-box
+	padding: 25px 45px
+	float: none !important
+	background: #fff
+
+	&__title
+		font-size: rem(16)
+		font-weight: bold
+		margin-bottom: 15px
+
+	> .sprev, .snext
+		display: none !important
+
+		
+
+
+.caroufredsel_wrapper
+	position: relative
+	
+	.sprev, .snext
+		width: 30px !important
+		height: 30% !important
+		top: calc(50% - 15px) !important
+		background: none !important
+		display: flex !important
+		align-items: center
+		justify-content: center
+		z-index: 10
+
+		
+		
+	.sprev
+		left: 0
+
+
+	.snext
+
+.list-parts 
+	width: auto !important
+	margin-left: 0 !important
+	max-width: 850px
+	align-self: center
+
+	li
+		padding: 0 !important
+		height: auto !important
+
+	a
+		padding: 10px !important
+		display: flex !important
+		align-items: center
+		justify-content: center
+		margin: 0 !important
+		width: auto !important
+		height: auto !important
+
+	
+
+
+
+	.slick
+		&-arrow
+			display: flex !important
+			justify-content: center
+			align-items: center
+			background: transparent
+			border: 0
+			font-size: 0
+			+size(30px)
+			display: block
+			position: absolute
+			z-index: 2
+			cursor: pointer
+			outline: none
+			padding: 0
+			cursor: pointer
+			
+			
+
+			&:before 
+				content: ""
+				+size(8px)
+				border:
+					top: 1px solid #000
+					right: 1px solid #000
+				display: block
+
+		&-prev
+			left: -25px
+			top: calc(50% - 15px)
+			
+			&:before 
+				transform: rotate(-135deg)
+
+		&-next
+			top: calc(50% - 15px)
+			right: -30px
+			&:before 
+				transform: rotate(45deg)
+
+.exclusive
+	margin: 0 35px 30px 45px
+	background: #f5f5f5
+
+
+	&__title
+		display: block
+		background: $main-color
+		padding: 15px 25px;
+		color: #fff
+		margin-bottom: 25px
+		font-size: rem(16)
+		font-weight: bold
+		
+
+	&__list 
+		display: flex
+		padding: 0 60px 45px 0
+
+	&__item 
+		width: calc((100% - 60px * 4) / 4)
+		margin: 0 0 0 60px
+
+		&-img 
+			margin-bottom: 12px
+
+			img 
+				display: block
+		&-data 
+			font-size: rem(11)
+			letter-spacing: .01em
+			color: #3a3a3a
+			margin-bottom: 5px
+		&-title 
+			font-size: rem(14)
+			font-weight: bold
+			color: $main-color
+
+.big-slider 
+	.slide-news
+		background: #f5f5f5 !important
+		text-decoration: none
+
+
+
+	.slides_container
+		display: block !important
+
+	.slide-news 
+		.b-text
+			position: static !important
+
+			.name 
+				a
+					text-decoration: none !important
+					font-size: rem(16)
+					color: $main-color !important
+
+			.up-news 
+				font-size: rem(12) !important
+
+				a
+					text-decoration: none !important
+
+
+	.slick
+		&-arrow
+			position: absolute
+			top: 264px
+			width: 68px
+			height: 36px
+			font-size: 0
+			border: 0
+			background: #f5f5f5
+			z-index: 2
+			cursor: pointer
+			display: flex 
+			justify-content: center
+			align-items: center
+
+			&:before 
+				content: ""
+				position: absolute
+				display: block
+				+size(10px)
+				border:
+					top: 1px solid #000
+					right: 1px solid #000
+
+		&-prev 
+			right: 68px
+			&:before
+				transform: rotate(-135deg)
+				left: 39px
+
+		&-next
+			right: 0
+
+			&:before
+				transform: rotate(45deg)
+				right: 39px
+
+
+.bs-news
+	.news
+		.up-news
+			font-size: rem(11) !important
+			color: #3a3a3a !important
+
+			a
+				color: #3a3a3a !important
+
+			.date
+				line-height: 1
+
+		.name 
+			a
+				font-size: rem(14) !important
+
+.t-clr1, .t-clr2, .t-clr3, .t-clr4
+	padding: 6px !important
+	font-size: rem(9)
+	border-radius: 0 !important
+	color: #fff !important
+	transition: background .3s ease
+
+a.t-clr1, .t-clr1
+	background: #626ff2 !important
+
+	&:hover
+		background: #3844bd!important
+
+a.t-clr2, .t-clr2
+	background: #6ebe5b !important
+
+	&:hover
+		background: #5aa948 !important
+
+a.t-clr3, .t-clr3
+	background: #e6b633 !important
+	&:hover
+		background: #ecb51c !important
+
+
+*
+	box-sizing: border-box
+
+.title2
+	border-radius: 0 !important
+	padding: 15px 20px !important
+	background: $main-color !important
+
+.content
+	margin: 0 !important
+	width: 50%
+	padding: 0 !important
+
+.content2
+	margin: 0 !important
+
+
+.inner
+	.col2, .column--right
+		margin: 0 !important
+
+	.content2
+		width: 100% !important
+		margin-right: 30px !important
+
+	.column--right
+		max-width: 185px
+		margin-left: 30px
+
+.b-wiki 
+	.titl
+		width: 117px !important
+
+
+.b-refresh-img
+	position: relative !important
+	top: initial !important 
+	right: initial !important
+	
+.b-lk .col-l, .b-lk .col-r
+	width: 50% !important
+
+.container
+	display: flex
+	padding: 0 45px !important
+	box-sizing: border-box
+
+.column--right
+	display: flex
+	flex-direction: column
+	margin-left: 30px
+
+.column-block
+	display: flex
+	box-sizing: border-box
+	padding: 0 0 30px
+
+.col1, .col2
+	padding: 0 !important
+
+.col1
+	> *
+		&:not(:first-child)
+			margin-top: 30px
+
+
+
+.col1
+	margin-left: 0 !important 
+
+.title2, .b-switcher
+	width: 100% !important
+	background: $main-color !important
+
+.b-score_table 
+	th
+		background: $main-color !important
+
+.b-tags
+	.title2
+		margin-bottom: 23px
+
+	&__list
+		background: #f5f5f5
+		padding: 0 17px 30px
+
+.banner
+	&--smoll
+		display: block
+		text-decoration: none
+		margin: 40px 0
+
+.birthday
+	color: #000
+	background: $second-color
+	display: block 
+
+	&__list
+		padding: 0 0 30px 0
+
+	&__item 
+
+	&-title
+		background: $main-color
+		padding: 15px 20px
+		color: #fff
+		font-size: rem(14)
+		font-weight: bold
+		
+
+	&__user 
+		font-size: rem(14)
+		color: $main-color
+		font-weight: bold
+		line-height: rem(22)
+	&__img
+
+		img 
+			display: block
+	&__day
+		font-size: rem(14)
+		font-weight: 500
+		margin-top: 10px
+
+	&__info
+		padding: 20px
+
+.shop-block
+
+	&__title
+		display: flex
+		align-items: center
+		background: $main-color 
+		color: #fff 
+		padding: 15px 20px
+		font-size: rem(14)
+		font-weight: bold
+
+		&-group 
+			font-size: rem(14)
+			color: #3a3a3a
+			font-weight: bold
+
+	&__arrow
+		display: flex
+		margin-left: auto
+		
+
+		.slick
+			&-arrow
+				font-size: 0 
+				border: 0 
+				background: transparent 
+				+size(30px)
+				cursor: pointer
+				display: flex !important
+				justify-content: center
+					
+
+				&:after 
+					content: ""
+					display: block
+					+size(10px)
+					border: 
+						top: 1px solid #fff 
+						right: 1px solid #fff
+
+			&-prev 
+				&:after 
+					transform: rotate(-135deg)
+			&-next 
+				&:after 
+					transform: rotate(45deg)
+
+
+
+	&__list 
+		height: auto !important
+						
+
+	&__item 
+		padding: 25px
+		background: $second-color
+
+
+	&__link 
+		padding: 10px 20px 
+		color: #fff
+		background: $main-color
+		font-size: rem(14)
+		font-weight: 500
+		text-align: center
+		margin-top: 15px
+
+	&__img
+		display: flex 
+		justify-content: center
+		align-items: flex-start
+		margin-bottom: 20px
+		height: auto !important
+
+		
+			
+
+.all
+
+	&-float
+		box-shadow: none
+.bs-news
+	.news
+		.up-news 
+			a, span
+				font-size: rem(11) !important
+				text-decoration: none !important
+
+		.name 
+			a
+				font-size: rem(14) !important
+				font-weight: bold !important
+				border-bottom: 0 !important
+				color: #1e7bc3 !important
+
+
+.b-video-photo1
+	height: auto !important
+	background: #fff !important
+	margin: 0 !important
+
+	.wrapper
+		margin: 0 45px
+		background: $second-color !important
+	
+
+	&-wrapp
+		display: flex
+		padding: 30px 23px
+
+	.b-video
+		flex: none !important
+		margin: 0 !important
+		width: 100% !important
+		max-width: 430px
+
+		.video
+			margin-bottom: 20px !important
+
+		.name 
+			a
+				border-bottom: 0 !important
+				color: #1e7bc3 !important
+
+		.bott
+			font-size: rem(11) !important
+			margin: 0 0 20px 0 !important
+
+	.right
+		display: flex
+		flex-direction: column
+		margin: 0 0 0 30px!important
+
+		.btn
+			margin-left: auto
+			margin-top: 30px
+			
+
+		.b-list
+			display: flex
+			margin: 0 !important
+			border: 0 !important
+
+		.img
+			flex: none
+			width: auto !important
+
+		.desc
+			margin-left: 30px !important
+
+		.up
+			display: flex !important
+			justify-content: flex-start
+			margin: 0 0 15px 0 !important
+			color: #3a3a3a !important
+			font-size: rem(11) !important
+
+		.name
+			
+			a 
+				border-bottom: 0 !important
+				font-size: rem(14)
+				color: #1e7bc3 !important
+				
+			
+			
+
+.slider-part
+	margin: 0 !important
+	padding: 35px 45px !important
+	width: 100% !important
+	background: #fff
+
+	.list-part
+		margin-left: -15px
+		width: 100%
+
+.titl		
+	padding: 15px 20px
+	color: #fff !important
+	background: $main-color
+	font-size: rem(16)
+
+.title2, .b-switcher
+	border-radius: 0
+
+
+.btn
+	padding: 15px 30px 
+	background: $main-color
+	color: #fff
+	font-size: rem(14)
+	font-weight: bold
+	display: inline-block
+	text-decoration: none
+
+.b-switcher
+	display: flex
+	flex-wrap: wrap
+	justify-content: center 
+	padding: 15px 10px
+	margin: 0 !important
+
+.e-switcher_item
+	font-size: rem(14) !important
+
+	&.m-active
+		font-weight: normal !important
+.e-switcher_btn
+	display: block
+	margin-top: 10px
+	height: 14px !important
+
+.title3
+	padding: 16px 10px
+	color: #3a3a3a
+	font-size: rem(16)
+	font-weight: bold
+	text-align: center
+	background: #f5f5f5 !important
+	border: 
+		bottom: 1px solid #ebeaea
+	
+.b-score_table
+	background: #f5f5f5 !important
+
+	tr 
+		&:first-child
+			border:
+				bottom: 1px solid #ebeaea
+
+			th
+				padding: 15px 10px !important
+	th 
+		background: #f5f5f5 !important
+		color: #3a3a3a !important
+		font-size: rem(14) !important
+
+		&[colspan="2"]
+			font-weight: bold
+
+	td
+		span
+			color: #3a3a3a !important
+
+	&_cover.m-west
+		min-width: auto !important
+
+.b-switcher_tab
+	.btn
+		padding: 10px 15px !important
+		margin-top: 20px
+		margin: 30px 0 0 10px
+
+.s-regular 
+	.b-score_table_top
+		width: 100%
+
+.b-score_table_cover.m-west
+	padding: 0
+
+.b-switcher_tab table.b-score_table td
+	padding: 5px 10px!important
+	
+
+footer 
+	background: #f5f5f5 !important
+	height: auto !important
+	padding: 25px 45px
+	display: flex 
+	justify-content: space-between
+	align-items: flex-start
+
+	.left
+		margin: 0
+		width: auto !important
+
+	a
+		border-bottom: 0
+
+		&.design
+			white-space: nowrap
+			display: flex
+			align-items: center
+			margin: 0 !important
+			width: auto !important
+			height: auto !important
+			padding: 10px 85px 10px 0 !important
+			font-size: rem(14) !important
+			color: #3a3a3a !important
+			font-weight: normal !important
+			background: url(../img/xpage.png) no-repeat right 0 center !important
+			background-position-x: 76px
+			background-position-y: center
+.f-menu
+	width: auto !important
+	
+
+	
+	
+.pop-soc
+	background: #dadfe1 !important
+
+	.titl
+		background: none 
+		color: #3a3a3a !important
+		padding: 0 
+		font-size: rem(11)
+
+.pop-login
+	width: 195px !important
+
+.pop-login 
+	.pop-soc
+		left: 0 !important
+		padding: 10px 0 10px !important
+
+#eventsCalendar .DynarchCalendar-hover-title div
+	border: 0 !important
+	background: none
+
+#eventsCalendarTooltip .tooltipBody .eventHeader
+	font-size: 16px !important
+
+
+.all
+	> div 
+		&:last-child
+			padding-bottom: 57px
+
+
+.list-part 
+	li 
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+
+.index-calendar-title
+	background: $main-color
+	color: #fff !important
+	padding: 15px 20px
+	font-size: 0.875rem
+	font-weight: bold
+
+.index-calendar
+	#calendarWrapper
+		margin-top: 0 !important
+		border: 0 !important
+
+	.DynarchCalendar-topCont, #calendarWrapper
+		width: 100% !important
+
+.slider-game
+	.list-parts
+		width: 100% !important
+
+.b-score_table
+	td
+		font-size: rem(14) !important
+	th, span
+		font-family: Roboto !important
+
+.b-switcher_tab .btn
+	font-weight: 400
+
+header .aut ul input
+	border-bottom: 0
+	color: #fff !important
+	background: #1e7bc3 !important
+	margin-right: 10px
+
+	&:hover
+		background: #1252A1 !important
+
+
+.over
+	position: relative
+	
+	&:before 
+		content: ""
+		display: block
+		position: absolute
+		margin: 0 auto
+		top: 208px
+		width: 960px
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 2
+		box-shadow: 0 0 10px #000
+
+div.b-wiki .titl
+	margin-top: 5px;
+
+div.b-my-comm 
+	.comm-login-soc
+		display: flex
+
+	.log-soc
+		height: auto
+		line-height: 1
+		padding: 10px 20px
+		padding: 10px 20px 10px 40px	
+
+
+
+
+.team-dreams
+	+size(668px 1428px)
+	position: relative
+
+	&__img
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+
+.forms
+	&__input-cont
+		width: 200px
+		height: 51px
+
+	&__submit
+		input
+			width: 139px
+			height: 46px
+			background-color: #e43531
+			color: #fff
+			font-size: 14px
+			border: 0 
+			border-radius: 0
+			transition: background .3s ease
+
+			&:hover 
+				background-color: #c43834
+
+
+
+.tabs
+	&-title
+		font-size: rem(35)
+		font-weight: bold
+		line-height: 1
+		margin: 65px 0 30px
+
+	&-top
+		display: flex
+
+	&-tab
+		padding: 15px
+		width: calc(100% / 4)
+		background: #e8eaef
+		text-align: center
+		cursor: pointer
+		font-weight: bold
+		transition: background .3s ease, color .3s ease
+
+		&:hover, &.active
+			background: #1e7bc3
+			color: #fff
+
+		&:not(:first-child)
+			border-left: 1px solid #fff
+
+	&-content
+		display: none
+
+		&.active
+			display: block
+
+.team-dreams
+
+	&-cont
+		.forms__submit
+			text-align: center
+			margin-top: 35px
+
+	&__item
+		z-index: 10
+		position: relative
+		height: 50%
+
+		display: flex 
+		flex-direction: column
+		justify-content: flex-start
+
+		box-sizing: border-box
+
+	&__top
+		padding: 17px 17px 120px 17px
+
+		.team-dreams__line
+			&:nth-last-child(2)
+				margin-top: auto
+				margin-bottom: 30px
+
+			&:first-child
+				margin-bottom: 40px
+
+			&:nth-child(2)
+				margin-bottom: 85px
+
+			&:nth-child(3)
+				margin-bottom: 30px
+
+	&__bottom
+		padding: 120px 17px 17px 17px
+
+		> div
+			display: flex
+			flex-direction: column-reverse
+
+		.team-dreams
+			&__line
+				&:nth-last-child(2)
+					margin-bottom: 30px
+
+				&:first-child
+					margin-bottom: 85px
+
+				&:nth-child(2)
+					margin-bottom: 40px
+
+				&:nth-child(3)
+					margin-bottom: 30px
+
+
+
+
+	&__line
+		display: flex
+		justify-content: space-around
+
+
+
+	// .selectize-control
+	// 	height: 100%
+	// 	width: 100%
+	// 	background: #fff !important
+	// 	padding: 0 !important
+	// 	border-radius: 0 !important
+	// 	border: 0
+
+	// .selectize
+
+	// 	&-dropdown
+	// 		left: 0px!important
+
+	// 		.option
+	// 			padding: 15px 24px
+	// 			font-size: 16px
+
+	// 	&-control.single 
+	// 		.selectize-input
+	// 			&:after
+	// 				content: ''
+	// 				position: absolute
+	// 				top: calc(50% - 6px)
+	// 				right: 15px
+	// 				margin-top: 0
+	// 				width: 6px
+	// 				height: 6px
+	// 				border: 
+	// 					bottom: 1px solid #fff
+	// 					right: 1px solid #fff
+	// 					top: 0
+	// 					left: 0
+	// 				transform: rotate(45deg)
+
+	// 			&.not-full
+	// 				&:after
+	// 					border: 
+	// 						bottom: 1px solid #2a8cd8
+	// 						right: 1px solid #2a8cd8
+
+
+
+	// 	&-input
+	// 		background: none !important
+	// 		padding: 0 !important
+	// 		font-size: 16px
+	// 		border-radius: 0 !important
+	// 		border: 0 !important
+
+	// 		.item
+	// 			margin: 0
+	// 			height: 100%
+	// 			width: 100%
+	// 			font-size: 16px
+	// 			padding: 13px 24px
+	// 			background-color: #2a8cd8 !important
+	// 			color: #fff
+	// 			border: 0 !important
+	// 			border-radius: 0 !important
+
+	// 		input
+	// 			position: absolute
+	// 			top: 0
+	// 			left: 0
+	// 			right: 0
+	// 			bottom: 0
+	// 			width: 100% !important
+	// 			height: 100%
+	// 			padding: 10px 24px !important
+	// 			font-size: 16px
+	// 			background-color: #edeef2 !important
+	// 			border-radius: 0 !important
+	// 			border: 0
+	// 			cursor: pointer
+
+	.forms__input-cont
+		position: relative
+
+		&:after 
+			content: ''
+			position: absolute
+			right: 20px
+			top: calc(50% - 3px)
+			+size(6px)
+			border:
+				right: 1px solid $main-color
+				bottom: 1px solid $main-color
+			transform: rotate(45deg)
+			display: block
+
+		select
+			width: 100%
+			height: 100%
+			padding: 0 30px 0 15px
+			font-size: 16px
+			background: #e8eaef
+			border: 0
+
+	input, a, button, textarea, select
+		outline: none
+
+
+	select
+		-webkit-appearance: none
+		/* for FF */
+		-moz-appearance: none
+		text-indent: 0.01px
+		text-overflow: ''
+		/* for IE */
+		-ms-appearance: none
+		appearance: none!important
+
+		&::-ms-expand 
+			display: none
+
+
+.forms
+	.form
+		&-title 
+			font-size: 35px
+			font-weight: 700
+			margin-bottom: 33px
+			display: inline-block
+			text-align: center
+
+
+			&--lauras
+				position: relative
+
+				&:before 
+					content: ''
+					display: block
+					position: absolute
+					left: -50px
+					top: 0
+					width: 29px
+					height: 54px
+					background: url('../new-img/new/ico-lauras--left.png')
+
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					right: -50px
+					top: 0
+					width: 29px
+					height: 54px
+					background: url('../new-img/new/ico-lauras--right.png')
+
+		&-text 
+			font-size: 16px
+
+		&-table
+			&__list
+				counter-reset: i
+
+			&__team
+				display: flex 
+				flex-wrap: wrap 
+				margin: 0 0 -23px -30px
+
+				&-item 
+					width: calc((100% - 30px * 3) / 3)
+					margin: 0 0 23px 30px
+					position: relative
+					display: flex
+					align-items: center
+					font-size: 16px
+
+					figure 
+						margin-right: 18px
+
+					&:first-child
+
+						img
+							opacity: 0
+
+						figure
+							position: relative
+
+							&:after
+								position: absolute
+								content: ""
+								top: 0
+								left: 0
+								width: 100%
+								height: 100%
+								background: url("../new-img/hockey-mask1.svg") center no-repeat
+								background-size: contain
+
+
+
+
+			&__item
+				counter-increment: i
+				display: flex
+				border-top: 1px solid #ebecee
+				padding: 40px 0
+
+				&:nth-child(n+4)
+					.form-table__item-num
+						&:before, &:after 	
+							display: none
+
+
+				&-num
+
+					+size(87px)
+					border-radius: 50% 
+					background-color: #1e7bc3
+					display: flex 
+					justify-content: center
+					align-items: center
+					margin-right: 59px
+					flex: none
+
+					&:before 
+						content: ''
+						display: block
+						width: 20px
+						height: 50px
+						background: url('../img/new/ico-lauras.png') no-repeat center
+					&:after
+						content: ''
+						display: block
+						width: 20px
+						height: 50px
+						background: url('../img/new/ico-lauras.png') no-repeat center
+						transform: rotateX(180deg) rotateZ(180deg)
+
+					span
+						padding: 0 5px
+
+						&:before
+							content: counter(i)
+							display: inline-block
+							color: #fff
+							font-size: 15px
+
+
+
+
+	// &.thanks
+	// 	max-width: 500px 
+	// 	width: 100%
+	// 	text-align: center
+	// 	padding: 60px 1.4rem
+
+	// &.turnir-table
+	// 	max-width: 820px 
+	// 	width: 100%
+	// 	padding: 60px
+
+	// 	.form-title
+	// 		display: block
+	// 		margin-bottom: 60px
+
+
+
+.turnir-table
+	&__item
+		display: flex
+		align-items: center
+		padding: 20px 0
+
+		&:not(:nth-child(odd))
+			border-top: 1px solid #e8eaef
+
+		&:nth-child(n + 4)
+			.turnir-table__item
+				&-num
+					span
+						color: #1e7bc3
+
+					&:before, &:after
+						background: url('../new-img/ico-lauras--blue.png') no-repeat center
+
+				&-progress
+					.progress-line
+						color: #1e7bc3
+
+
+		&-num
+			display: flex 
+			justify-content: center
+			align-items: center
+			margin-right: 40px
+			flex: none
+
+
+			span
+				line-height: 1
+				display: block
+				font-size: rem(16)
+				font-weight: bold
+				margin: 0 5px
+				color: #c43834
+
+			&:before, &:after
+				content: ''
+				display: block
+				width: 20px
+				height: 32px
+				background: url('../new-img/ico-lauras--red.png') no-repeat center
+
+			&:after
+				transform: scale(-1, 1)
+
+		&-name
+			font-size: rem(14)
+			margin-right: auto
+
+		&-progress
+			display: flex
+			align-items: center
+
+.progress
+
+	&-num
+		margin-right: 15px
+		font-size: rem(14)
+		font-weight: bold
+
+	&-line
+		position: relative
+		width: 128px
+		height: 6px
+		background: #e8eaef
+		color: #c43834
+
+		.line
+			position: absolute
+			top: 0
+			left: 0
+			height: 100%
+			background-color: currentColor
+.team-dreams
+
+	&__block_bottom
+		margin-top: 65px
+
+	&__title-bot
+		font-size: rem(35)
+		font-weight: 700
+		margin-bottom: 25px
+
+	&__text-bot
+		font-size: rem(16)
+
+	&__btn-bot 
+		font-size: rem(14)
+		padding: 16px 30px 
+		background: #e43531
+		color: #fff 
+		text-decoration: none
+		display: inline-block
+		margin-top: 35px
+
+
+
+.form-subscribe
+	padding: 25px
+	&__cont
+		margin: 0 35px 30px 45px
+		background: #f5f5f5
+
+	&__title
+		background: $main-color
+		color: #fff
+		font-size: rem(16)
+		padding: 15px 25px
+		font-weight: bold
+
+	.forms
+		&__input
+			height: 38px
+			border: 0
+			padding: 0 20px
+			border-radius: 0
+
+		&__submit
+			border: 0
+			border-radius: 0
+			box-shadow: none
+			background: $main-color
+			color: #fff
+			font-weight: bold
+			font-size: rem(16)
+			display: block
+			padding: 10px 15px
+			height: auto
+			text-align: center
+			margin-left: 30px
+			text-transform: none
+
+	.forms__input-cont
+		height: auto
+		width: 100%
+
+		&:not(:first-child)
+			margin-left: 30px
+
+		input 
+			width: 100%
+
+	.form-wrap
+		justify-content: space-between
+
+
+.form-wrap
+	display: flex
+
+
+.b-short_block.s-regular
+	&:nth-child(2), &:nth-child(4)
+		table[class^="b-score_table"]
+			tr 
+				td
+					color: $main-color !important
+
+					span 
+						color: $main-color !important
+
+
+
+		.m-west
+			table
+				tr
+					&:nth-child(n+10)
+						td
+							color: #ccc !important
+
+							span 
+								color: #ccc !important
+
+	&:nth-child(3)
+		table
+			tr 
+				td
+					color: $main-color !important
+
+					span 
+						color: $main-color !important
+			tr
+				&:nth-child(n+18)
+					td
+						color: #ccc !important
+
+						span 
+							color: #ccc !important
+
+	// &:last-child
+	// 	border-top: 1px solid #000 
+
+
+.b-switcher_tab 
+	table[class^="b-score_table"]
+		background: #f5f5f5 !important
+		width: 100%
+
+		tr
+			&:first-child
+				border-bottom: 1px solid #ebeaea
+				th
+					padding: 15px 10px !important
+
+		td
+			padding: 5px 10px !important
+
+			span
+				color: #000 !important
+
+
+.main-logo
+	display: flex
+	justify-content: center
+	padding: 90px 0 0
+
+	+ .over-bg
+		margin-top: 80px
+
+input[type=submit]
+	-webkit-appearance: none
+	appearance: none
+
+.main-slider
+	padding: 34px 45px 40px
+
+	&__slide
+
+		&:not(:first-child):not(.slick-slide)
+			display: none
+
+		img
+			display: block
+			width: 100%
+
+	.slick
+
+		&-dots
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 90px
+			display: flex
+			justify-content: center
+
+			li
+				margin: 0
+
+				&:not(:last-child)
+					margin-right: 15px
+
+			button
+				padding: 0
+				background: #fff
+				+size(9px)
+				display: block
+				border-radius: 50%
+				transition: background .3s ease
+				cursor: pointer
+				border: none
+				overflow: hidden
+				text-indent: -9999px
+
+			.slick-active
+
+				button
+					background: #1e7bc3
+
+.b-tags
+	user-select: none
+
+	.title2
+		cursor: pointer
+		position: relative
+
+		&.js__opened
+
+			&:after
+				transform: rotate(-135deg)
+				top: calc(50% - 4px)
+
+		&:after
+			content: ""
+			position: absolute
+			right: 15px
+			top: calc(50% - 9px)
+			+size(10px)
+			border-right: 2px solid #fff
+			border-bottom: 2px solid #fff
+			transform: rotate(45deg)
+
+	&__list
+		display: none
+
+
+
+@import "_grid"
+@import "media"
