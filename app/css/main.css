@@ -3,9 +3,15 @@
 }
 
 .player {
-  max-width: 294px;
-  width: 100%;
+  width: 294px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 0;
+}
+
+.player .fancybox-close-small {
+  height: 25px;
+  width: 25px;
+  padding: 0;
 }
 
 .player-top {
@@ -677,7 +683,7 @@ a.t-clr3:hover, .t-clr3:hover {
 
 .container {
   display: flex;
-  padding: 0 45px !important;
+  padding: 0 25px !important;
   box-sizing: border-box;
 }
 
@@ -1238,6 +1244,10 @@ div.b-my-comm .log-soc {
   background-color: #c43834;
 }
 
+.tabs {
+  margin-right: 30px;
+}
+
 .tabs-title {
   font-size: 2.1875rem;
   font-weight: bold;
@@ -1305,7 +1315,7 @@ div.b-my-comm .log-soc {
 }
 
 .team-dreams__top .team-dreams__line:nth-child(2) {
-  margin-bottom: 85px;
+  margin-bottom: 110px;
 }
 
 .team-dreams__top .team-dreams__line:nth-child(3) {
@@ -1326,7 +1336,7 @@ div.b-my-comm .log-soc {
 }
 
 .team-dreams__bottom .team-dreams__line:first-child {
-  margin-bottom: 85px;
+  margin-bottom: 140px;
 }
 
 .team-dreams__bottom .team-dreams__line:nth-child(2) {
@@ -1599,6 +1609,7 @@ div.b-my-comm .log-soc {
   left: 0;
   height: 100%;
   background-color: currentColor;
+  max-width: 100%;
 }
 
 .team-dreams__block_bottom {
@@ -1623,6 +1634,41 @@ div.b-my-comm .log-soc {
   text-decoration: none;
   display: inline-block;
   margin-top: 35px;
+}
+
+.team-dreams-cont {
+  position: relative;
+}
+
+.dream-team-title-1 {
+  background: #e8eaef;
+  padding: 10px 20px;
+  line-height: 1;
+  border: 1px solid #1e7bc3;
+  color: #1e7bc3;
+  position: absolute;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  max-width: 200px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.dream-team-title-1:nth-child(2) {
+  bottom: 28%;
+}
+
+.dream-team-title-1:nth-child(3) {
+  bottom: 46%;
+}
+
+.dream-team-title-1:nth-child(4) {
+  bottom: 67%;
+}
+
+.dream-team-title-1:nth-child(5) {
+  bottom: 84%;
 }
 
 .form-subscribe {
@@ -1830,6 +1876,26 @@ input[type=submit] {
 
 .b-tags__list {
   display: none;
+}
+
+.all {
+  width: 1000px;
+}
+
+div.col1, div.col2 {
+  width: 215px;
+}
+
+.inner .column--right {
+  max-width: 215px;
+}
+
+.tur_table {
+  margin: 0 !important;
+}
+
+div.b-video-photo1 {
+  width: 1000px;
 }
 
 /*# sourceMappingURL=main.css.map */
