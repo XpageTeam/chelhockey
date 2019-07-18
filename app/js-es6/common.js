@@ -107,7 +107,7 @@ $(window).on('load', function(){
 		$.fancybox.open({
 			src  : '#soc-popup',
 			afterClose: function(){
-				Cookies.set("soc-popup", 1);
+				Cookies.set("soc-popup", 1, { expires: 1 });
 			}
 		});
 
