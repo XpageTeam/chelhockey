@@ -89,4 +89,17 @@ $(function () {
 		$(this).toggleClass("js__opened").next(".b-tags__list").slideToggle(300);
 	});
 });
+
+$(window).on('load', function () {
+
+	if ($('#soc-popup').length) {
+
+		$.fancybox.open({
+			src: '#soc-popup',
+			afterClose: function afterClose() {
+				Cookies.set("soc-popup", 1);
+			}
+		});
+	}
+});
 //# sourceMappingURL=common.js.map

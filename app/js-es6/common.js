@@ -1,5 +1,9 @@
 $(() => {
 
+
+
+
+
 	$(".tabs-tab").click(function(){
 		let $this = $(this);
 
@@ -90,4 +94,25 @@ $(() => {
 		$(this).toggleClass("js__opened").next(".b-tags__list").slideToggle(300)
 	})
 
+
+
+
 })
+
+$(window).on('load', function(){
+
+
+	if($('#soc-popup').length){
+
+		$.fancybox.open({
+			src  : '#soc-popup',
+			afterClose: function(){
+				Cookies.set("soc-popup", 1);
+			}
+		});
+
+
+	}
+
+})
+

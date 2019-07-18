@@ -60,6 +60,47 @@
   color: #212121;
 }
 
+.soc-popup {
+  display: none;
+  width: 510px !important;
+  padding: 55px 70px;
+}
+
+.soc-popup .fancybox-close-small svg {
+  opacity: 1;
+  stroke: #000;
+}
+
+.soc-popup__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.375rem;
+  margin-bottom: 35px;
+}
+
+.soc-popup__list {
+  display: flex;
+  justify-content: center;
+}
+
+.soc-popup__link {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #407ABD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soc-popup__link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.soc-popup__link img {
+  display: block;
+}
+
 body {
   background-image: url("../new-img/new/foto_arka.jpg") !important;
   background-repeat: no-repeat !important;
@@ -67,6 +108,7 @@ body {
   background-color: #1f253d !important;
   background-position-x: center !important;
   background-position-y: top !important;
+  background-size: cover !important;
 }
 
 a {
@@ -1302,7 +1344,7 @@ div.b-my-comm .log-soc {
 }
 
 .team-dreams__top {
-  padding: 17px 17px 120px 17px;
+  padding: 17px 17px 0 17px;
 }
 
 .team-dreams__top .team-dreams__line:nth-last-child(2) {
@@ -1315,7 +1357,7 @@ div.b-my-comm .log-soc {
 }
 
 .team-dreams__top .team-dreams__line:nth-child(2) {
-  margin-bottom: 110px;
+  margin-bottom: 133px;
 }
 
 .team-dreams__top .team-dreams__line:nth-child(3) {
@@ -1647,7 +1689,7 @@ div.b-my-comm .log-soc {
   border: 1px solid #1e7bc3;
   color: #1e7bc3;
   position: absolute;
-  left: 50%;
+  left: 47.6%;
   transform: translate3d(-50%, 0, 0);
   max-width: 200px;
   text-align: center;
@@ -1664,11 +1706,15 @@ div.b-my-comm .log-soc {
 }
 
 .dream-team-title-1:nth-child(4) {
-  bottom: 67%;
+  bottom: 965px;
 }
 
 .dream-team-title-1:nth-child(5) {
-  bottom: 84%;
+  bottom: 82%;
+}
+
+.block_2 .team-dreams__line:nth-child(2) {
+  margin-bottom: 0;
 }
 
 .form-subscribe {

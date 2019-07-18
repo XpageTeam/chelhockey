@@ -5,6 +5,7 @@ $output-bourbon-deprecation-warnings: false
 @import "functions"
 
 @import "_player.sass"
+@import "_form-soc.sass"
 
 body
 	background-image: url('../new-img/new/foto_arka.jpg') !important
@@ -13,6 +14,7 @@ body
 	background-color: #1f253d !important
 	background-position-x: center !important
 	background-position-y: top !important
+	background-size: cover !important
 a 
 	color: #1e7bc3
 
@@ -1158,7 +1160,7 @@ div.b-my-comm
 		box-sizing: border-box
 
 	&__top
-		padding: 17px 17px 120px 17px
+		padding: 17px 17px 0 17px
 
 		.team-dreams__line
 			&:nth-last-child(2)
@@ -1169,7 +1171,7 @@ div.b-my-comm
 				margin-bottom: 40px
 
 			&:nth-child(2)
-				margin-bottom: 110px
+				margin-bottom: 133px
 
 			&:nth-child(3)
 				margin-bottom: 30px
@@ -1574,7 +1576,7 @@ div.b-my-comm
 	border: 1px solid #1e7bc3
 	color: #1e7bc3
 	position: absolute
-	left: 50%
+	left: 47.6%
 	transform: translate3d(-50%,0,0)
 	max-width: 200px
 	text-align: center
@@ -1586,10 +1588,14 @@ div.b-my-comm
 	&:nth-child(3)
 		bottom: 46%
 	&:nth-child(4)
-		bottom: 67%
+		// bottom: 64%
+		bottom: 965px
 	&:nth-child(5)
-		bottom: 84%
+		bottom: 82%
 
+.block_2
+	.team-dreams__line:nth-child(2)
+		margin-bottom: 0
 
 
 
