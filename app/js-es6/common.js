@@ -1,9 +1,5 @@
 $(() => {
 
-
-
-
-
 	$(".tabs-tab").click(function(){
 		let $this = $(this);
 
@@ -47,6 +43,12 @@ $(() => {
 		});
 
 		$("header .slider-game .list-parts").slick({
+			slidesToShow: 8,
+			slidesToScroll: 1,
+			slide: "li",
+			//appendArrows: $(".kart__slider-arrows"),
+		});
+		$(".footer-slider .list-parts").slick({
 			slidesToShow: 8,
 			slidesToScroll: 1,
 			slide: "li",

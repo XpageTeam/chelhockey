@@ -49,6 +49,12 @@ $(function () {
 			slide: "li"
 			//appendArrows: $(".kart__slider-arrows"),
 		});
+		$(".footer-slider .list-parts").slick({
+			slidesToShow: 8,
+			slidesToScroll: 1,
+			slide: "li"
+			//appendArrows: $(".kart__slider-arrows"),
+		});
 
 		$(".slider-part .list-part").slick({
 			slidesToShow: 6,
