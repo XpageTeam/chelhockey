@@ -145,6 +145,7 @@ body.bg .all-float {
 
 .over-bg {
   margin-top: 210px;
+  transform: none;
 }
 
 .photo-body-overlay header {
@@ -1878,14 +1879,38 @@ b[data-title="Трактор"], b[data-title="Челмет"], b[data-title*="Б�
   color: #000 !important;
 }
 
+body.js__scroll .main-logo {
+  position: absolute;
+  z-index: 10;
+  transform: translate3d(0, -100%, 0);
+  background: #030a6b;
+  padding: 20px 0;
+}
+
+body.js__scroll .main-logo img {
+  width: 250px;
+  height: auto;
+}
+
+body.js__scroll .main-logo.js__show {
+  position: fixed;
+  transform: translate3d(0, 0, 0);
+}
+
 .main-logo {
   display: flex;
   justify-content: center;
   padding: 90px 0 0;
+  transition: transform .3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .main-logo + .over-bg {
-  margin-top: 80px;
+  margin-top: 284px;
+  min-width: 1170px !important;
 }
 
 input[type=submit] {

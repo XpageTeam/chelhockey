@@ -41,6 +41,7 @@ body.bg
 
 .over-bg
 	margin-top: 210px
+	transform: none
 
 .photo-body-overlay
 	header
@@ -1747,13 +1748,38 @@ b
 				color: #000 !important
 
 
+body.js__scroll
+
+	.main-logo
+		position: absolute
+		z-index: 10
+		transform: translate3d(0,-100%,0)
+		background: #030a6b
+		padding: 20px 0
+
+		img
+			width: 250px
+			height: auto
+
+		&.js__show
+			position: fixed
+			transform: translate3d(0,0,0)
+
+
 .main-logo
 	display: flex
 	justify-content: center
 	padding: 90px 0 0
+	transition: transform .3s ease
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+
 
 	+ .over-bg
-		margin-top: 80px
+		margin-top: 284px
+		min-width: 1170px !important
 
 input[type=submit]
 	-webkit-appearance: none
@@ -1847,6 +1873,8 @@ div.col1, div.col2
 
 div.b-video-photo1
 	width: 1000px
+
+
 
 @import "_grid"
 @import "media"

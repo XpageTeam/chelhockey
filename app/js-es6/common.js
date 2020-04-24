@@ -118,3 +118,20 @@ $(window).on('load', function(){
 
 })
 
+$(window).on("load scroll resize", e => {
+
+	if ($(window).scrollTop() >= 280){
+
+		$("body").addClass("js__scroll");
+
+		setTimeout(e => {
+			$(".main-logo").addClass("js__show")
+		}, 500);
+
+	}else{
+		$(".main-logo").removeClass("js__show");
+		$("body").removeClass("js__scroll");
+	}
+
+});
+
