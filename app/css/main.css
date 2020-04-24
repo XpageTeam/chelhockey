@@ -103,13 +103,19 @@
 }
 
 body {
-  background-image: url("../new-img/new/foto_arka.jpg") !important;
-  background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
-  background-color: #1f253d !important;
-  background-position-x: center !important;
-  background-position-y: top !important;
-  background-size: cover !important;
+  background-attachment: fixed;
+  background-position-x: center;
+}
+
+.over-bg {
+  padding-top: 284px;
+  margin: 0 auto;
+  min-width: 1170px !important;
+  transform: none;
+}
+
+.over:before {
+  display: none !important;
 }
 
 a {
@@ -141,11 +147,6 @@ body.bg .all-float {
 .btn--red {
   background: #e12d03 !important;
   margin-bottom: 27px;
-}
-
-.over-bg {
-  margin-top: 210px;
-  transform: none;
 }
 
 .photo-body-overlay header {
@@ -1906,11 +1907,7 @@ body.js__scroll .main-logo.js__show {
   top: 0;
   left: 0;
   right: 0;
-}
-
-.main-logo + .over-bg {
-  margin-top: 284px;
-  min-width: 1170px !important;
+  z-index: 1;
 }
 
 input[type=submit] {

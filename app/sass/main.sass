@@ -8,13 +8,19 @@ $output-bourbon-deprecation-warnings: false
 @import "_form-soc.sass"
 
 body
-	background-image: url('../new-img/new/foto_arka.jpg') !important
-	background-repeat: no-repeat !important
-	background-attachment: fixed !important
-	background-color: #1f253d !important
-	background-position-x: center !important
-	background-position-y: top !important
-	background-size: cover !important
+	background-attachment: fixed
+	background-position-x: center
+
+
+.over-bg
+	padding-top: 284px
+	margin: 0 auto
+	min-width: 1170px !important
+	transform: none
+
+.over:before
+	display: none !important
+
 a 
 	color: #1e7bc3
 
@@ -30,6 +36,7 @@ img
 	display: flex
 	justify-content: space-between
 	align-items: center
+
 body.bg 
 	.all-float
 		margin: 0
@@ -39,9 +46,7 @@ body.bg
 	background: #e12d03 !important
 	margin-bottom: 27px
 
-.over-bg
-	margin-top: 210px
-	transform: none
+
 
 .photo-body-overlay
 	header
@@ -1775,11 +1780,10 @@ body.js__scroll
 	top: 0
 	left: 0
 	right: 0
+	z-index: 1
 
 
-	+ .over-bg
-		margin-top: 284px
-		min-width: 1170px !important
+
 
 input[type=submit]
 	-webkit-appearance: none
