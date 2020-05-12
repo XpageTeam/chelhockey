@@ -1,2 +1,44 @@
-$output-bourbon-deprecation-warnings: false;
-@import "bourbon"
+// $output-bourbon-deprecation-warnings: false;
+// @import "bourbon"
+
+
+// +font-face("Montserrat", "../fonts/montserrat-light", 300, $file-formats: woff)
+// +font-face("Montserrat", "../fonts/montserrat-regular", 400, $file-formats: woff)
+// +font-face("Montserrat", "../fonts/montserrat-medium", 500, $file-formats: woff)
+// +font-face("Montserrat", "../fonts/montserrat-semibold", 600, $file-formats: woff)
+// +font-face("Montserrat", "../fonts/montserrat-bold", bold, $file-formats: woff, woff2)
+
+@font-face
+	font-family: "Montserrat"
+	font-display: swap
+	font-style: normal
+	font-weight: 300
+	src: url("../fonts/montserrat-light.woff2") format("woff2"), url("../fonts/montserrat-light.woff") format("woff")
+
+@font-face
+	font-family: "Montserrat"
+	font-display: swap
+	font-style: normal
+	font-weight: 400
+	src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff")
+
+@font-face
+	font-family: "Montserrat"
+	font-display: swap
+	font-style: normal
+	font-weight: 500
+	src: url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff")
+
+@font-face
+	font-family: "Montserrat"
+	font-display: swap
+	font-style: normal
+	font-weight: 600
+	src: url("../fonts/montserrat-semibold.woff2") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff")
+
+@font-face
+	font-family: "Montserrat"
+	font-display: swap
+	font-style: normal
+	font-weight: bold
+	src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff")
