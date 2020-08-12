@@ -1847,16 +1847,12 @@ b[data-title="Трактор"], b[data-title="Челмет"], b[data-title*="Б�
   color: #212D8D !important;
 }
 
-.b-short_block.s-regular:nth-child(2) table[class^="b-score_table"] tr td span b, .b-short_block.s-regular:nth-child(4) table[class^="b-score_table"] tr td span b {
-  font-weight: bold;
-}
-
 .b-short_block.s-regular:nth-child(2) .m-west table tr:nth-child(n+10) td, .b-short_block.s-regular:nth-child(4) .m-west table tr:nth-child(n+10) td {
   color: #000 !important;
 }
 
 .b-short_block.s-regular:nth-child(2) .m-west table tr:nth-child(n+10) td span, .b-short_block.s-regular:nth-child(4) .m-west table tr:nth-child(n+10) td span {
-  color: #000 !important;
+  color: #212D8D !important;
 }
 
 .b-short_block.s-regular:nth-child(2) .m-west table tr:nth-child(n+10) td span b, .b-short_block.s-regular:nth-child(4) .m-west table tr:nth-child(n+10) td span b {
@@ -1871,16 +1867,12 @@ b[data-title="Трактор"], b[data-title="Челмет"], b[data-title*="Б�
   color: #212D8D !important;
 }
 
-.b-short_block.s-regular:nth-child(3) table tr td span b {
-  font-weight: bold;
-}
-
 .b-short_block.s-regular:nth-child(3) table tr:nth-child(n+18) td {
   color: #000 !important;
 }
 
 .b-short_block.s-regular:nth-child(3) table tr:nth-child(n+18) td span {
-  color: #000 !important;
+  color: #212D8D !important;
 }
 
 .b-short_block.s-regular:nth-child(3) table tr:nth-child(n+18) td span b {
@@ -1905,7 +1897,11 @@ b[data-title="Трактор"], b[data-title="Челмет"], b[data-title*="Б�
 }
 
 .b-switcher_tab table[class^="b-score_table"] td span {
-  color: #000 !important;
+  color: #212D8D !important;
+}
+
+.b-switcher_tab table[class^="b-score_table"] td span b {
+  font-weight: 400;
 }
 
 body.js__scroll .main-logo {
